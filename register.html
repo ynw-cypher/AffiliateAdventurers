@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Login/Register - Affiliate Adventurers</title>
+        <link rel="icon" type="img/png"
+        href="img/about-3.png">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="https://maps.app.goo.gl/Cji682AL2BXFHkJN7" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                        <a href="tel:+1 724-980-5748" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+1 724-980-5748</a>
+                        <a href="mailto:affiliateadventurers@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>affiliateadventurers@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="register.html"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
+                        <a href="register.html"><small class="me-3 text-dark"><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fa fa-home text-primary me-2"></i> My Dashboard</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Register-form Start-->
+         <div class="container" id="signup">
+            <h1 class="form-title">Register</h1>
+            <form method="post" action="">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="fName" id="fName" placeholder="First Name" required>
+                    <label for="fName">First Name</label>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="lName" id="lName" placeholder="Last Name" required>
+                    <label for="lName">Last Name</label>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <input type="submit" class="btn" value="Sign Up" name="SignUp">
+            </form>
+            <p class="or">
+                ----------or---------
+            </p>
+            <div class="icons">
+                <i class="fab fa-google"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="links">
+                <p>Already Have an Account ?</p>
+                <button id="signInButton">Sign In</button>
+            </div>
+
+        <div class="container1" id="signIn">
+            <h1 class="form-title">Sign In</h1>
+            <form method="post" action="">
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <p class="recover">
+                    <a href="#">Recover Password</a>
+                </p>
+                <input type="submit" class="btn" value="Sign In" name="SignIn">
+            </form>
+            <p class="or">
+                ----------or---------
+            </p>
+            <div class="icons">
+                <i class="fab fa-google"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="link">
+                <p>Don't have account yet ?</p>
+                <button id="signUpButton">Sign Up</button>
+            </div>
+        </div>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "poppins",sans-serif;
+            }
+
+            body{
+                background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(img/carousel-2.jpg);
+            }
+
+            .container{
+                background: #fff transparent;
+                height: 600px;
+                width: 750px;
+                margin-bottom: 70px;
+                padding: 1.5rem;
+                margin: 50px auto;
+                border-radius: 10px;
+                box-shadow: 0 20px 35px rgba(0,0,1,0,9);
+            }
+
+            .container1{
+                background: #fff;
+                width: 750px;
+                padding: 1.5rem;
+                margin: 50px auto;
+                margin-top: 50px;
+                border-radius: 10px;
+                box-shadow: 0 20px 35px rgba(0,0,1,0,9);
+            }
+
+            
+
+            form{
+                margin: 0 2rem;
+                padding: 1.5rem;
+            }
+            .form-title{
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-align: center;
+                padding: 1.3rem;
+                margin-bottom: 0.4rem;
+            }
+
+            input{
+                color: inherit;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px;
+            }
+
+            .container h1{
+                color: rgb(19, 168, 51);
+                font-size: 35px;
+            }
+
+            .container .input-group{
+                color: rgb(9, 151, 40);;
+            }
+        </style>
+
+        
+    
+    
+    
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+    
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
